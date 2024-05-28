@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Pivot Business Lawyers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <!--Logo is turned white in the css with a filter on dark mode-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="images/logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Our People
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                News
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cs-contact-group">
+                <a href="tel:+61 3906 85 086" class="cs-phone">
+                    <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg"
+                        alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                    +61 3906 85 086
+                </a>
+                <div class="cs-social">
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo"
+                            width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo"
+                            width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo"
+                            width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-282">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">The Best Business Lawyers in Victoria</span>
+                <h2 class="cs-title">Our Areas of Practice</h2>
+                <p class="cs-text">
+                    Here at Pivot Business Lawyers and our Melbourne-based team have collective decades of expertise
+                    across various areas of law, including:
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Business Law & Compliance</h3>
+                        <p class="cs-item-text">
+                            We provide comprehensive legal services to ensure your business adheres to all regulatory
+                            requirements and operates within the bounds of law.
+                        </p>
+                        <span class="cs-fake-link">Read More
+                            <!--Svg Arrow-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_114)">
+                                    <path
+                                        d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z"
+                                        fill="#92038B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_114-282-282">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Start-ups & Entrepreneurs</h3>
+                        <p class="cs-item-text">
+                            Our firm offers expert advice on business formation, funding, and planning to help
+                            entrepreneurs turn their ideas into successful realities.
+                        </p>
+                        <span class="cs-fake-link">Read More
+                            <!--Svg Arrow-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_114)">
+                                    <path
+                                        d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z"
+                                        fill="#92038B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_114-282-282">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Consumer Law & Privacy</h3>
+                        <p class="cs-item-text">
+                            We advocate for consumers' rights and offer guidance on privacy laws, helping clients
+                            navigate through disputes, and protect personal information.
+                        </p>
+                        <span class="cs-fake-link">Read More
+                            <!--Svg Arrow-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_114)">
+                                    <path
+                                        d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z"
+                                        fill="#92038B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_114-282-282">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Private Clients</h3>
+                        <p class="cs-item-text">
+                            Our private client services cater to individuals, offering personalised legal advice on
+                            wealth management to secure your financial future.
+                        </p>
+                        <span class="cs-fake-link">Read More
+                            <!--Svg Arrow-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_114)">
+                                    <path
+                                        d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z"
+                                        fill="#92038B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_114-282-282">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Property and Leasing</h3>
+                        <p class="cs-item-text">
+                            We provide legal assistance in real estate transactions, including property purchases,
+                            sales, and leasing agreements to ensure smooth dealings.
+                        </p>
+                        <span class="cs-fake-link">Read More
+                            <!--Svg Arrow-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_114)">
+                                    <path
+                                        d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z"
+                                        fill="#92038B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_114-282-282">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a class="cs-link" href="">
+                        <h3 class="cs-h3">Professional Services</h3>
+                        <p class="cs-item-text">
+                            Our firm advises professionals on legal matters, including contracts and liability to
+                            support their operations and mitigate any risks.
+                        </p>
+                        <span class="cs-fake-link">Read More
+                            <!--Svg Arrow-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <g clip-path="url(#clip0_1_114)">
+                                    <path
+                                        d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z"
+                                        fill="#92038B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_114-282-282">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                 Why Choose Us                -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-441">
+        <div class="cs-container-row">
+            <div class="cs-image"></div>
+            <div>
+                <span class="cs-topper">Best-In-Class</span>
+                <h2 class="cs-title">Why Choose Us?</h2>
+                <p class="cs-text">
+                    At our firm, we are dedicated to providing exceptional legal services tailored to your individual
+                    needs,
+                    ensuring excellent outcomes.
+                </p>
+                <ul class="cs-card-group" style="padding-inline-start: 0;">
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture" aria-hidden="true">
+                                <img class="cs-icon"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Why-Choose/icon1.svg"
+                                    loading="lazy" decoding="async" alt="icon" width="40" height="40">
+                            </picture>
+                            <span class="cs-number">263</span>
+                            <p class="cs-item-p">
+                                Satisfied clients
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture" aria-hidden="true">
+                                <img class="cs-icon"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Why-Choose/icon2.svg"
+                                    loading="lazy" decoding="async" alt="icon" width="40" height="40">
+                            </picture>
+                            <span class="cs-number">18</span>
+                            <p class="cs-item-p">
+                                Years of experience
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture" aria-hidden="true">
+                                <img class="cs-icon"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Why-Choose/icon3.svg"
+                                    loading="lazy" decoding="async" alt="icon" width="40" height="40">
+                            </picture>
+                            <span class="cs-number">24</span>
+                            <p class="cs-item-p">
+                                Successful Business Cases
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div id="map" style="height: 400px; width: 100%;"></div>
+    <script src="js/script.js"></script>
+    <!-- ============================================ -->
+    <!--                Contact Strip                 -->
+    <!-- ============================================ -->
+
+    <!-- No headers, so no section tag -->
+    <div id="contact-strip-325">
+        <ul class="cs-stat-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-gold.svg"
+                        alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Phone</span>
+                    <a href="tel:555-456-7899" class="cs-link">+61 3906 85 086</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-gold.svg"
+                        alt="icon" width="40" height="35" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Address</span>
+                    <a href="" class="cs-link">Suite 43/135 Cardigan St <br> Carlton, Victoria 3053</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/clock-gold.svg"
+                        alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Opening Hours</span>
+                    <span class="cs-hours">Monday To Friday</span>
+                    <span class="cs-hours">9:00 AM - 8:00 PM</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="images/logo.png" alt="logo" width="210" aria-hidden="true" decoding="async">
+                <div class="footer-info">
+                    <p>&copy; 2024 Pivot Business Lawyers. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
